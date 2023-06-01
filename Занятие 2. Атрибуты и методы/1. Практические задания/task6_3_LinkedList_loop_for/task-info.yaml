@@ -11,7 +11,7 @@ files:
       offset: 183
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: "# TODO атрибут, хранящий длину последовательности"
   - offset: 613
     length: 45
@@ -21,7 +21,7 @@ files:
       offset: 613
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '# TODO устанавливаем длину последовательности'
   - offset: 1487
     length: 43
@@ -31,9 +31,9 @@ files:
       offset: 1487
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '# TODO проверка корректности границ индекса'
-  - offset: 2023
+  - offset: 2143
     length: 77
     placeholder_text: '# TODO с помощью цикла for распечатать в столбик все значения
       связного списка'
@@ -42,7 +42,7 @@ files:
       offset: 2023
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '# TODO с помощью цикла for распечатать в столбик все
       значения связного списка'
   text: |
@@ -162,5 +162,8 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 01 Jun 2023 17:05:47 UTC"
 record: -1

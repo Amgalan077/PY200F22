@@ -6,7 +6,7 @@ from node import Node
 class LinkedList:
     def __init__(self, data: Iterable = None):
         """Конструктор связного списка"""
-        ...  # TODO добавить указатель на первый элемент
+        self.node = None  # TODO добавить указатель на первый элемент
 
         self.list_nodes = []
         if data is not None:
@@ -39,14 +39,16 @@ class LinkedList:
         """ Функция выполняет перемещение по узлам до указанного индекса. И возвращает узел. """
         # TODO проверка правильности типа индекса
 
-        current_node = ...  # TODO чему равен начальный элемент?
-        ...  # TODO с помощью цикла for добраться до нужного узла
+        current_node = self.list_nodes[0]  # TODO чему равен начальный элемент?
+        for i in range(index):  # TODO с помощью цикла for добраться до нужного узла
+            current_node = current_node.next
 
-        return current_node
-
+        return current_node.value
     def __getitem__(self, index: int) -> Any:
         """ Метод возвращает значение узла по указанному индексу. """
-        ...  # TODO метод должен возвращать значение узла
+        node = self.step_by_step_on_nodes(index)
+
+        return node # TODO метод должен возвращать значение узла
 
 
 if __name__ == "__main__":

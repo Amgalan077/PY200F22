@@ -47,6 +47,8 @@ class LinkedList:
 
         current_node = self.head
         for _ in range(index):
+            if current_node.next is None:
+                raise IndexError
             current_node = current_node.next
 
         return current_node
@@ -61,6 +63,7 @@ class LinkedList:
 if __name__ == '__main__':
     list_ = [1, 2, 3]
     linked_list = LinkedList(list_)
-    print(linked_list)
-
+    print(linked_list[2])
+    for i in linked_list:
+        print(i)
     # TODO с помощью цикла for распечатать в столбик все значения связного списка

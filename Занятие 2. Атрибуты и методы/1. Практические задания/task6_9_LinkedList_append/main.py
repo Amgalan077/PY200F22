@@ -10,6 +10,12 @@ class LinkedList:
         self.head: Optional[Node] = None
 
         ...  # TODO инициализировать связный список
+        for i in data:
+            self.append(i)
+        # # for i in len(range)
+        # self.list_nodes_ = [Node(i) for i in data]
+        # for i in range(len(self.list_nodes_) - 1):
+        #     self.linked_nodes(self.list_nodes_[i],self.list_nodes_[i+1])
 
     def step_by_step_on_nodes(self, index: int) -> Node:
         """ Функция выполняет перемещение по узлам до указанного индекса. И возвращает узел. """
@@ -49,7 +55,11 @@ class LinkedList:
 
     def append(self, value: Any):
         """ Добавление элемента в конец связного списка. """
-        ...  # TODO реализовать алгоритм добавления узла в конец последовательности
+        new_node = Node(value)
+        while current.next is not None:  # TODO реализовать алгоритм добавления узла в конец последовательности
+            current = current.next
+        self.linked_nodes(current, new_node)
+        self.len += 1
 
 
 if __name__ == "__main__":
@@ -57,6 +67,6 @@ if __name__ == "__main__":
 
     ll = LinkedList(list_)
     print(ll)
-
+    #
     ll.append(100)
     print(ll)
