@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 238
-    length: 316
+  - offset: 248
+    length: 208
     placeholder_text: "...  # TODO инициализировать связный список"
     initial_state:
       length: 43
@@ -13,8 +13,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать связный список"
-  - offset: 1766
-    length: 215
+  - offset: 1434
+    length: 374
     placeholder_text: "...  # TODO реализовать алгоритм добавления узла в конец по\
       следовательности"
     initial_state:
@@ -132,8 +132,11 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
+- name: var.txt
+  visible: true
+  learner_created: true
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 18:03:56 UTC"
+  time: "Sat, 03 Jun 2023 08:31:44 UTC"
 record: -1

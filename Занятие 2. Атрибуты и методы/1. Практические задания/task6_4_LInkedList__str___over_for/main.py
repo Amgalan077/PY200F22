@@ -62,4 +62,3 @@ if __name__ == '__main__':
     list_ = [1, 2, 3]
     linked_list = LinkedList(list_)
     print(linked_list)
-    print(sorted(linked_list,reverse=True))

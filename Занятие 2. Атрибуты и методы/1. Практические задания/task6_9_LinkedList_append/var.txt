@@ -1,19 +1,15 @@
-from typing import Any, Iterable, Optional
-
-from node import Node
-
-
 class LinkedList:
     def __init__(self, data: Iterable = None):
         """Конструктор связного списка"""
-        # self.len = 0
+        self.len = 0
         self.head: Optional[Node] = None
 
         self.list_nodes = [Node(i) for i in data]  # TODO инициализировать связный список
 
         for i in range(len(self.list_nodes) - 1):
-            self.linked_nodes(self.list_nodes[i], self.list_nodes[i + 1])
+            self.linked_nodes(self.list_nodes[i],self.list_nodes[i+1])
 
+        print(self.list_nodes)
         for i in data:
             self.append(i)
 
@@ -48,14 +44,7 @@ class LinkedList:
         return node.value
 
     def __str__(self) -> str:
-        if self.head is not None:
-            current = self.head
-            values = [current.value]
-            while current.next is not None:
-                current = current.next
-                values.append(current.value)
-            return f'{values}'
-        return f'{self.__class__.__name__}[]'
+        return f"{[node for node in self]}"
 
     def __len__(self):
         return self.len
@@ -66,11 +55,12 @@ class LinkedList:
 
         if self.head is None:
             self.head = new_node
-            return
-        current = self.head
-        while current.next:
-            current = current.next
-        current.next = new_node
+        else:
+            current = self.step_by_step_on_nodes(len(self) - 1)
+            self.linked_nodes(current, new_node)
+            print(current, new_node, '\n')
+        print(self)
+        self.len += 1
 
 
 if __name__ == "__main__":
@@ -78,5 +68,6 @@ if __name__ == "__main__":
 
     ll = LinkedList(list_)
     print(ll)
+    #
     ll.append(100)
     print(ll)

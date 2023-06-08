@@ -4,35 +4,35 @@ files:
   visible: true
   placeholders:
   - offset: 429
-    length: 97
+    length: 77
     placeholder_text: "...  # TODO обернуть все значения в класс Node и поместить\
       \ их в python список"
     initial_state:
       length: 77
       offset: 429
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO обернуть все значения в класс Node и п\
       оместить их в python список"
-  - offset: 646
+  - offset: 516
     length: 46
     placeholder_text: "# TODO составьте алгоритм, который свяжет узлы"
     initial_state:
       length: 46
       offset: 516
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "# TODO составьте алгоритм, который свяжет узлы"
-  - offset: 698
-    length: 13
+  - offset: 568
+    length: 36
     placeholder_text: '# TODO каким должен быть этот метод?'
     initial_state:
       length: 36
       offset: 568
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO каким должен быть этот метод?'
   text: |
@@ -118,5 +118,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 16:03:05 UTC"
+  time: "Thu, 01 Jun 2023 19:44:52 UTC"
 record: -1

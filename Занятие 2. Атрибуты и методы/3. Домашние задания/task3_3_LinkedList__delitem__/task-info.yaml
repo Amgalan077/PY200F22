@@ -4,16 +4,16 @@ files:
   visible: true
   placeholders:
   - offset: 1992
-    length: 28
+    length: 55
     placeholder_text: "...  # TODO проверка индекса"
     initial_state:
       length: 28
       offset: 1992
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: "...  # TODO проверка индекса"
-  - offset: 2030
+  - offset: 2513
     length: 29
     placeholder_text: "...  # TODO алгоритм удаления"
     initial_state:
@@ -21,7 +21,7 @@ files:
       offset: 2030
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: "...  # TODO алгоритм удаления"
   text: |
     from typing import Iterable, Optional, Any
@@ -165,5 +165,8 @@ files:
             self.is_valid(next_)
             self.next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 08 Jun 2023 10:06:27 UTC"
 record: -1

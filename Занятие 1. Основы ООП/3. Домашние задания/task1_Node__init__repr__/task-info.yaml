@@ -3,8 +3,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 363
-    length: 128
+  - offset: 371
+    length: 68
     placeholder_text: |-
       # TODO  инициализировать атрибуты экземпляра класса Node
               ...
@@ -12,34 +12,34 @@ files:
       length: 68
       offset: 371
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       # TODO  инициализировать атрибуты экземпляра класса Node
               ...
-  - offset: 491
-    length: 15
+  - offset: 445
+    length: 60
     placeholder_text: '# TODO реализовать метод __repr__ для отображения экземпляра'
     initial_state:
       length: 60
       offset: 445
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO реализовать метод __repr__ для отображения
       экземпляра'
-  - offset: 544
-    length: 11
+  - offset: 552
+    length: 40
     placeholder_text: "...  # TODO инициализировать первый узел"
     initial_state:
       length: 40
       offset: 552
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать первый узел"
-  - offset: 570
-    length: 8
+  - offset: 612
+    length: 40
     placeholder_text: "...  # TODO инициализировать второй узел"
     initial_state:
       length: 40
@@ -48,8 +48,8 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: "...  # TODO инициализировать второй узел"
-  - offset: 601
-    length: 3
+  - offset: 675
+    length: 78
     placeholder_text: "...  # TODO через атрибут экземпляра устанавливаем первому\
       \ узлу следующий узел"
     initial_state:
@@ -100,5 +100,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 13:33:12 UTC"
+  time: "Thu, 01 Jun 2023 13:37:56 UTC"
 record: -1

@@ -8,21 +8,24 @@ class LinkedList:
         """Конструктор связного списка"""
         self.len = 0
         self.head: Optional[Node] = None
-
         self.list_nodes = None
+        print(self)
         if data is not None:
+
             self.init_linked_list(data)
+
 
     def init_linked_list(self, data: Iterable):
         """ Метод, который создает вспомогательный список и связывает в нём узлы. """
         self.list_nodes = [Node(value) for value in data]
         self.head = self.list_nodes[0]
         self.len = len(self.list_nodes)
-
         for i in range(len(self.list_nodes) - 1):
+
             current_node = self.list_nodes[i]
             next_node = self.list_nodes[i + 1]
             self.linked_nodes(current_node, next_node)
+        print(self)
 
     @staticmethod
     def linked_nodes(left_node: Node, right_node: Optional[Node] = None) -> None:
@@ -66,14 +69,14 @@ class LinkedList:
 if __name__ == "__main__":
     list_ = [1, 2, 3]
     linked_list = LinkedList(list_)
-    empty_linked_list = LinkedList()
+    # empty_linked_list = LinkedList()
 
-    if linked_list:
-        print("Список не пустой")
-    else:
-        print("Список пустой")
-
-    if empty_linked_list:
-        print("Список не пустой")
-    else:
-        print("Список пустой")
+    # if linked_list:
+    #     print("Список не пустой")
+    # else:
+    #     print("Список пустой")
+    #
+    # if empty_linked_list:
+    #     print("Список не пустой")
+    # else:
+    #     print("Список пустой")

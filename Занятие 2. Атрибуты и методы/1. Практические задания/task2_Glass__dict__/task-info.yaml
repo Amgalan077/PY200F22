@@ -3,7 +3,7 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 173
+  - offset: 144
     length: 130
     placeholder_text: |-
       self.capacity_volume = capacity_volume  # объем стакана
@@ -42,5 +42,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 15:10:05 UTC"
+  time: "Thu, 01 Jun 2023 19:44:39 UTC"
 record: -1

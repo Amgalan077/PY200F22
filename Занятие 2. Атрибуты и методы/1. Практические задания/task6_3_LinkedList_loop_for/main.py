@@ -63,7 +63,7 @@ class LinkedList:
 if __name__ == '__main__':
     list_ = [1, 2, 3]
     linked_list = LinkedList(list_)
-    print(linked_list[2])
+    print(linked_list)
     for i in linked_list:
         print(i)
     # TODO с помощью цикла for распечатать в столбик все значения связного списка

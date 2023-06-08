@@ -33,15 +33,15 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: '# TODO проверка корректности границ индекса'
-  - offset: 2143
-    length: 77
+  - offset: 2023
+    length: 74
     placeholder_text: '# TODO с помощью цикла for распечатать в столбик все значения
       связного списка'
     initial_state:
       length: 77
       offset: 2023
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: '# TODO с помощью цикла for распечатать в столбик все
       значения связного списка'
@@ -165,5 +165,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 17:05:47 UTC"
+  time: "Thu, 01 Jun 2023 19:46:35 UTC"
 record: -1

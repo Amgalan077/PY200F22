@@ -12,14 +12,29 @@ class Date:
 
         self.is_valid_date(self.day, self.month, self.year)
 
-    def is_leap_year(self, year: int):
+    @classmethod
+    def is_leap_year(cls, year: int):
         """Проверяет, является ли год високосным"""
-        ...  # TODO реализовать метод
+        if year % 4 == 0:
+            return True
+        return False
+        # TODO реализовать метод
 
-    def get_max_day(self, month: int, year: int):
+    @classmethod
+    def get_max_day(cls, month: int, year: int):
         """Возвращает максимальное количество дней в месяце для указанного года"""
+        if cls.is_leap_year(year):
+            return cls.DAY_OF_MONTH[1][month - 1]
+        return cls.DAY_OF_MONTH[0][month - 1]
         ...  # TODO используя атрибут класса DAY_OF_MONTH вернуть количество дней в запрашиваемом месяце и году
 
-    def is_valid_date(self, day: int, month: int, year: int):
+    @staticmethod
+    def is_valid_date(day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
+        if 1 < year and (1 <= month <= 12) and 1 <= day <= Date.get_max_day(month, year):
+            return 'Дата корректная'
+        return "Дата некорректная"
         ...  # TODO проверить валидность даты
+
+
+print(Date.is_valid_date(22, 12, 2022))

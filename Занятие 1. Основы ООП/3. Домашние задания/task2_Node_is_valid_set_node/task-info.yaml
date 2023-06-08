@@ -12,8 +12,8 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 634
-    length: 15
+  - offset: 399
+    length: 68
     placeholder_text: '# TODO установить значение следующего узла с помощью метода
       set_next'
     initial_state:
@@ -24,8 +24,8 @@ files:
     status: Solved
     encrypted_possible_answer: '# TODO установить значение следующего узла с помощью
       метода set_next'
-  - offset: 783
-    length: 0
+  - offset: 601
+    length: 64
     placeholder_text: |-
       # TODO метод проверки корректности связываемого узла
               ...
@@ -33,13 +33,13 @@ files:
       length: 64
       offset: 601
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       # TODO метод проверки корректности связываемого узла
               ...
-  - offset: 836
-    length: 92
+  - offset: 739
+    length: 98
     placeholder_text: |-
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
@@ -52,8 +52,8 @@ files:
     encrypted_possible_answer: |-
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
-  - offset: 928
-    length: 35
+  - offset: 871
+    length: 50
     placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
     initial_state:
       length: 50
@@ -62,14 +62,14 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: '# TODO инициализируйте два узла с любыми значеними'
-  - offset: 969
-    length: 0
+  - offset: 927
+    length: 36
     placeholder_text: '# TODO свяжите первый узел со вторым'
     initial_state:
       length: 36
       offset: 927
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: '# TODO свяжите первый узел со вторым'
   text: |
@@ -112,5 +112,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 01 Jun 2023 13:33:33 UTC"
+  time: "Thu, 01 Jun 2023 13:37:59 UTC"
 record: -1
