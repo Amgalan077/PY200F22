@@ -72,8 +72,19 @@ class LinkedList:
     def __len__(self):
         return self.len
 
-    # TODO определить метод __eq__
+    def __eq__(self, other):
+        flag = True
 
+        if len(other)> len(self):
+            return False
+
+        for i,j in zip(self, other):
+            if i == j:
+                continue
+            else:
+                flag = False
+
+        return flag
 
 if __name__ == "__main__":
     ll_1 = LinkedList(range(5))

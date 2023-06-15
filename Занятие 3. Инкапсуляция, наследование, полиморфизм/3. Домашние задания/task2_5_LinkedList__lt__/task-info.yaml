@@ -11,7 +11,7 @@ files:
       offset: 105
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '# TODO задекорировать класс'
   - offset: 2577
     length: 30
@@ -21,7 +21,7 @@ files:
       offset: 2577
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: '# TODO определить метод __lt__'
   text: |
     from typing import Any, Iterable, Optional
@@ -166,6 +166,6 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
 record: -1
 post_submission_on_open: true

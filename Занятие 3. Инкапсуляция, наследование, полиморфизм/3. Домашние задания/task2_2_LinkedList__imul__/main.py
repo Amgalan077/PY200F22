@@ -109,7 +109,11 @@ class LinkedList:
 
     def __imul__(self, other: int) -> "LinkedList":
         ...  # TODO определить одновременное умножение и присваивание
+        for items in repeat(self.to_list(), other-1):
+            for item in items:
+                self.append(item)
 
+        return self
 
 if __name__ == "__main__":
     list_ = [1, 2, 3]

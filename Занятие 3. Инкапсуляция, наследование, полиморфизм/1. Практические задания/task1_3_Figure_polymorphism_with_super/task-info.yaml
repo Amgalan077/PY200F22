@@ -4,15 +4,15 @@ files:
   visible: true
   placeholders:
   - offset: 388
-    length: 14
+    length: 62
     placeholder_text: "...  # TODO c помощью super вызвать метод area базового кла\
       сса"
     initial_state:
       length: 62
       offset: 388
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: "...  # TODO c помощью super вызвать метод area баз\
       ового класса"
   text: |
@@ -53,8 +53,5 @@ files:
     50
     538.195520835486
   learner_created: false
-status: Solved
-feedback:
-  message: Congratulations!
-  time: "Thu, 08 Jun 2023 15:47:13 UTC"
+status: Unchecked
 record: -1

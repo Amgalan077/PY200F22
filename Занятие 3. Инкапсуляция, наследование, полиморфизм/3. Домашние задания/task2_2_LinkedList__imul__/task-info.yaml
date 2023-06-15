@@ -11,8 +11,8 @@ files:
       length: 61
       offset: 3214
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: "...  # TODO определить одновременное умножение и п\
       рисваивание"
   text: |+
@@ -185,5 +185,8 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 15 Jun 2023 07:10:31 UTC"
 record: -1

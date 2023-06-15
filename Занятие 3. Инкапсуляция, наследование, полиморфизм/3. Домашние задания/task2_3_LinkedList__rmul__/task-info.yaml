@@ -11,7 +11,7 @@ files:
       offset: 2878
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: "...  # TODO определить правостороннее умножение"
   text: |+
     from typing import Any, Iterable, Optional
@@ -171,5 +171,8 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 15 Jun 2023 07:19:12 UTC"
 record: -1

@@ -19,7 +19,7 @@ files:
       def __add__(self, other: "LinkedList") -> "LinkedList":  # TODO метод должен уметь складывать list
               if not isinstance(other, LinkedList):
                   raise TypeError
-  - offset: 2445
+  - offset: 2444
     length: 44
     placeholder_text: "... # TODO определить метод для оператора +="
     initial_state:
@@ -173,5 +173,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 08 Jun 2023 17:48:49 UTC"
+  time: "Thu, 15 Jun 2023 06:39:03 UTC"
 record: -1

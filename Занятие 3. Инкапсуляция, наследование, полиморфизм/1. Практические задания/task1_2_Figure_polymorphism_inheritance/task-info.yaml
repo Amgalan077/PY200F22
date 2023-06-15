@@ -3,7 +3,7 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 386
+  - offset: 238
     length: 59
     placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
     initial_state:
@@ -11,10 +11,10 @@ files:
       offset: 238
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: "...  # TODO определить конструктор и перегрузить м\
       етод area"
-  - offset: 637
+  - offset: 364
     length: 59
     placeholder_text: "...  # TODO определить конструктор и перегрузить метод area"
     initial_state:
@@ -22,7 +22,7 @@ files:
       offset: 364
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: "...  # TODO определить конструктор и перегрузить м\
       етод area"
   text: |
@@ -69,8 +69,5 @@ files:
     Вызван метод класса Rectangle
     Вызван метод класса Circle
   learner_created: false
-status: Solved
-feedback:
-  message: Congratulations!
-  time: "Thu, 08 Jun 2023 15:42:35 UTC"
+status: Unchecked
 record: -1
