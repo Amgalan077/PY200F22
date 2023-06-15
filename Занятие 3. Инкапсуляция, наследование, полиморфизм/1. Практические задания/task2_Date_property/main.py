@@ -13,13 +13,20 @@ class Date:
         self.is_valid_date(self._day, self._month, self._year)
 
     # TODO какой декоратор следует применить?
-    def is_leap_year(self, year: int) -> bool:
+    @classmethod
+    def is_leap_year(cls, year: int) -> bool:
+        if year % 4 == 0:
+            return True
+        return False
         """Проверяет, является ли год високосным"""
         ...  # TODO записать условие проверки високосного года
 
-    def get_max_day(self, month: int, year: int) -> int:
+
+    @classmethod
+    def get_max_day(cls, month: int, year: int) -> int:
         """Возвращает максимальное количество дней в месяце для указанного года"""
         ...  # TODO вернуть количество дней указанного месяца
+        if cls.is_leap_year(year):
 
     def is_valid_date(self, day: int, month: int, year: int) -> None:
         """Проверяет, является ли дата корректной"""

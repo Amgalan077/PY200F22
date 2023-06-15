@@ -71,7 +71,9 @@ class LinkedList:
 
     def __add__(self, other: "LinkedList") -> "LinkedList":
         ...  # TODO реализовать конкатенацию последовательностей
-
+        for i in other:
+            self.append(i)
+        return self
 
 if __name__ == "__main__":
     list_ = [1, 2, 3]
