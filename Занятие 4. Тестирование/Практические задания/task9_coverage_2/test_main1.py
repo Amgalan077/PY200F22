@@ -1,6 +1,6 @@
 import unittest
 from example import SuperFunction
-
+import coverage
 
 class MyTests(unittest.TestCase):
     def test_1(self):
